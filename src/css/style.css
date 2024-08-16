@@ -1,0 +1,787 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Main Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+body {
+  background: #F7F7F8;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Header */
+.header {
+  width: 100%;
+  justify-content: center;
+}
+
+.top--banner {
+  max-width: 95%;
+  margin: 1rem auto;
+  padding: .5rem 1rem;
+  background-color: #FF9500;
+  border-radius: 6px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.top--banner .banner {
+  font-size: 1rem;
+  font-weight: 400;
+  display: inline-flex;
+  align-items: center;
+  column-gap: 1rem;
+  color: white;
+}
+
+.top--banner .banner i {
+  font-size: 1rem;
+  transition: transform .4s;
+  font-weight: initial;
+}
+
+.top--banner:hover i {
+  transform: translateX(.35rem);
+}
+
+/* Navbar */
+.navbar {
+  max-width: 90%;
+  margin: 1rem auto;
+  display: flex;
+  align-items: center;
+}
+
+.nav--logo {
+  margin-right: 3rem;
+}
+
+.navbar .nav--menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar .nav--menu .nav--list {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav--list .list a {
+  color: black;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: .8rem 1.25rem;
+  border-radius: 6px;
+}
+
+.nav--list .list a:hover {
+  background-color: #F1F1F3;
+  transition: background-color 0.3s ease; /* Transisi halus untuk efek hover */
+}
+
+.navbar .nav--menu .nav--registration {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.nav--registration .nav--signup a{
+  color: black;
+  padding: .8rem 1.25rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.nav--registration .nav--signup a:hover {
+  background-color: #F1F1F3;
+  transition: background-color 0.3s ease; /* Transisi halus untuk efek hover */
+}
+
+.nav--registration .nav--login {
+  padding: .8rem 1.25rem;
+  border: none;
+  background-color: #FF9500;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+}
+
+.nav--registration .nav--login:hover {
+  background-color: #FFBF66;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+
+/* Hero Section */
+.hero {
+  max-width: 70%;
+  margin: 1rem auto;
+  justify-content: center;
+  align-content: center;
+  height: 70vh;
+  text-align: center;
+}
+
+.hero--section {
+  max-width: 900px; /* Batas lebar konten agar tidak terlalu lebar */
+  padding: 1rem;
+
+}
+
+
+.hero .hero--section .hero--title {
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  display: inline-flex;
+  justify-content: center;
+  column-gap: 1.5rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+  background-color: #FCFCFD;
+  padding: 1rem 1.25rem;
+  border-radius: .5rem;
+  align-items: center;
+}
+
+.hero .hero--section .hero--title i {
+  padding: 1rem;
+  background-color: #FFF4E5;
+  border-radius: .5rem;
+}
+
+.hero .hero--section .hero--title span {
+  color: #FF9500;
+}
+
+.hero .hero--section h3 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: .5rem;
+}
+
+.hero .hero--section p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.hero--buttons {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.hero--buttons .explore--course {
+  padding: 1rem 1.25rem;
+  border: none;
+  border-radius: .5rem;
+  background-color: #FF9500;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  display: inline-flex;
+  column-gap: .5rem;
+  align-items: center;
+}
+
+.hero--buttons .explore--course i {
+  align-items: center;
+  font-size: 1rem;
+  transition: transform .4s;
+  font-weight: initial;
+}
+
+.explore--course:hover i {
+  transform: translateX(.35rem);
+}
+
+.explore--course:hover {
+  background-color: #FFBF66;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.hero--buttons .view--pricing {
+  padding: 1rem 1.25rem;
+  border: none;
+  border-radius: .5rem;
+  background-color: white;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.view--pricing:hover {
+  background-color: #F1F1F3;
+  transition: background-color 0.3s ease; 
+  cursor: pointer;
+}
+
+/*  Main Section */
+.main {
+  width: 100%;
+  justify-content: center;
+}
+
+.main .card--container {
+  padding-top: 2rem;
+}
+
+.main .card--container .card--gallery {
+  max-width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+  background-color: #FCFCFD;
+  border-radius: .5rem;
+  cursor: pointer;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Menambahkan shadow untuk kesan depth */
+}
+
+.main .card--container .card--gallery .image--box {
+  padding: 1.25rem 1.5rem;
+  transition: transform .4s;
+}
+
+.main .card--container .card--gallery .image--box:hover {
+  transform: translateY(-.50rem);
+}
+
+.image--section {
+  max-width: 90%;
+  margin: 0 auto;
+  padding-top: 1.5rem;
+  text-align: center; /* Memusatkan gambar secara horizontal */
+}
+
+.image--section img {
+  width: 100%;
+  max-width: 70rem; /* Membatasi lebar gambar agar tidak melebihi ukuran tertentu */
+  height: auto;
+  display: inline-block; /* Menjadikan gambar sebagai elemen inline-block agar bisa dipusatkan */
+  cursor: pointer;
+}
+
+/* Benefit Section */
+.benefits--section {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.benefits--section .benefits--header {
+  width: 100%; /* Mengatur lebar header sesuai dengan lebar section */
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.benefits--section .benefits--header .benefits--title {
+  font-size: 2.25rem;
+  font-weight: 600;
+  color: #262626;
+  margin-bottom: 1rem;
+}
+
+.benefits--section .benefits--header .benefits--bp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.benefits--section .benefits--header .benefits--bp .benefit--description {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #59595A;
+  max-width: 70%;
+}
+
+.benefits--section .benefits--header .benefits--bp .benefit--bt {
+  padding: 1rem;
+  border: none;
+  background-color: #FCFCFD;
+  border-radius: .4rem;
+  font-size: .8rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.benefits--section .benefits--header .benefits--bp .benefit--bt:hover {
+  transition: transform .4s;
+  background-color: #F1F1F3;
+}
+
+.benefits--container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 2rem;
+  gap: 1.5rem;
+}
+
+.benefits--container .benefit--card {
+  background-color: #FCFCFD;
+  padding: 2rem;
+  border-radius: .8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform .4s;
+}
+
+.benefits--container .benefit--card:hover {
+ transform: translateY(-.35rem);
+ box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+ cursor: pointer;
+}
+
+.benefits--container .benefit--card .benefit--number {
+  text-align: end;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #262626;
+  margin-bottom: 1rem;
+}
+
+.benefits--container .benefit--card h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.benefits--container .benefit--card p {
+  font-size: 1rem;
+  color: #4C4C4D;
+  flex-grow: 1;
+  margin-bottom: 1.25rem;
+}
+
+.benefits--container .benefit--card .benefit--icon {
+  align-self: flex-end;
+  padding: .5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F1F1F1;
+  border-radius: .5rem;
+}
+
+.benefit--icon i {
+  font-size: 1.5rem;
+  color: #FF9500;
+}
+
+/* Courses Section */
+.courses--section {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.courses--section .courses--header {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+
+.courses--section .courses--header .courses--title {
+  font-size: 2.25rem;
+  font-weight: 600;
+  color: #262626;
+  margin-bottom: 1rem;
+}
+
+.courses--section .courses--header .courses--description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.courses--section .courses--header .courses--description .courses--desc {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #59595A;
+  max-width: 70%;
+}
+
+.courses--section .courses--header .courses--description .courses--bt {
+  padding: 1rem;
+  border: none;
+  background-color: #FCFCFD;
+  border-radius: .4rem;
+  font-size: .8rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.courses--section .courses--header .courses--description .courses--bt:hover {
+  transition: transform .4s;
+  background-color: #F1F1F3;
+}
+
+.courses--container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  gap: 1rem;
+}
+
+.courses--container .courses--card {
+  background-color: #ffffff;
+  padding: 1.25rem 1.5rem;
+  border-radius: .5rem;
+  text-align: left;
+  justify-content: center;
+  align-items: center;
+}
+
+.courses--card .course--image {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Menyusun gambar di tengah secara horizontal */
+  align-items: center; /* Menyusun gambar di tengah secara vertikal */
+}
+
+.courses--card .course--image img {
+  width: 30rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.courses--card .course--content {
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+.courses--card .course--content .course--meta {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  column-gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.course--meta .course--duration {
+  font-size: .9rem;
+  font-weight: 400;
+  padding: .5rem 1rem;
+  color: #4C4C4D;
+  background-color: #F1F1F3;
+  border-radius: .4rem;
+}
+
+.course--meta .course--level {
+  font-size: .9rem;
+  font-weight: 400;
+  padding: .5rem 1rem;
+  color: #4C4C4D;
+  background-color: #F1F1F3;
+  border-radius: .4rem;
+}
+
+.course--meta .course--author {
+  margin-left: auto;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.course--title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: .5rem;
+}
+
+.course--description {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #4C4C4D;
+  margin-bottom: 1.5rem;
+}
+
+.course-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #F7F7F8;
+  font-size: .9rem;
+  color: #262626;
+  border-radius: .5rem;
+}
+
+.course-button:hover {
+  transition: transform .4s;
+  background-color: #F1F1F3;
+}
+
+
+/* Testimoni Section */
+.testimoni--section {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimoni--section .testimoni--header {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.testimoni--header .testimoni--title {
+  font-size: 2.25rem;
+  font-weight: 600;
+  color: #262626;
+  margin-bottom: 1rem;
+}
+
+.testimoni--header .testimoni--description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.testimoni--header .testimoni--description .testimoni--desc {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #59595A;
+  max-width: 72%;
+}
+
+.testimoni--header .testimoni--description .testimoni--btn {
+  padding: 1rem;
+  border: none;
+  background-color: #FCFCFD;
+  border-radius: .4rem;
+  font-size: .8rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.testimoni--description .testimoni--btn:hover {
+  transition: transform .4s;
+  background-color: #F1F1F3;
+}
+
+.testimoni--container {
+  display: grid;
+  grid-template-columns: repeat(2 ,1fr);
+  gap: 1rem;
+}
+
+.testimoni--container .testimoni--cards {
+  background-color: #ffffff;
+  border-radius: .5rem;
+  padding: 2rem;
+}
+
+.testimoni--cards .testimoni--comment {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #4C4C4D;
+  text-align: justify;
+  margin-bottom: 1.5rem;
+}
+
+.testimoni--cards .testimoni--info {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+.testimoni--customer {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333333;
+}
+
+.info--btn {
+  margin-left: auto;
+  font-size: 1rem;
+  font-weight: 400;
+  border: none;
+  background-color: #F1F1F3;
+  padding: 1rem 1.25rem;
+  border-radius: .4rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.info--btn:hover {
+  background-color: #e0e0e2;
+  transform: translateY(-0.1rem);
+}
+
+/* Pricing Section */
+.pricing--section {
+  width: 100%;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  background-color: white;
+}
+
+.pricing--section .pricing--header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.pricing--section .pricing--header h2 {
+  font-size: 2.25rem;
+  font-weight: 600;
+  color: #262626;
+  margin-bottom: 1rem;
+}
+
+.pricing--section .pricing--header p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #59595A;
+  max-width: 72%;
+  text-align: center;
+  margin: 0.5rem auto 1rem;
+}
+
+.toggle--buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.toggle--buttons .toggle--button {
+  padding: 0.8rem 2rem;
+  border: none;
+  background-color: #FF9500;
+  color: white;
+  font-size: .9rem;
+  font-weight: 400;
+  border-radius: .4rem;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+
+.toggle--button.inactive {
+  background-color: #f1f1f3;
+  color: #59595A;
+}
+
+.pricing--cards {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.pricing--card {
+  background-color: #ffffff;
+  border-radius: .5rem;
+  padding: 2rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  max-width: 400px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.pricing--card:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.pricing--title {
+  text-align: center;
+  padding: 1rem;
+  background-color: #FFF9F0;
+  border-radius: .5rem .5rem 0 0;
+}
+
+.pricing--title h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #262626;
+}
+
+.pricing--price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem 0;
+}
+
+.pricing--price h2 {
+  font-size: 3.75rem;
+  font-weight: 600;
+  color: #262626;
+}
+
+.pricing--price span {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #4C4C4D;
+}
+
+.pricing--features {
+  margin-bottom: 2rem;
+}
+
+.pricing--features h4 {
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 1.25rem;
+}
+
+.pricing--features ul li {
+  font-size: 1rem;
+  font-weight: 400;
+  align-items: center;
+  justify-content: center;
+  padding: .75rem 1rem;
+  margin-bottom: .5rem;
+  display: inline-flex;
+  column-gap: 1rem;
+}
+
+.pricing--features ul li i {
+  align-items: center;
+  font-size: 1rem;
+  font-weight: initial;
+  padding: .5rem;
+  border-radius: .5rem;
+  background-color: #FFF4E5;
+}
+
+.pricing--button {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  background-color: #FC9000;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 0 0 .5rem .5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pricing--button:hover {
+  background-color: #e88a00;
+}
